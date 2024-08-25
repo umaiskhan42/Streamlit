@@ -19,3 +19,9 @@ df=pd.DataFrame({
 # Display the dataframe
 st.write("here is the dataframe")
 st.write(df)
+
+# Create a line chart
+chart=pd.DataFrame(
+    np.random.randn(20,3),columns=['a','b','c']
+)
+st.line_chart(chart)
